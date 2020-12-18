@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://webpack/./common/index.js"],"names":["common"],"mappings":"gGAAO,SAASA,IACd,MAAO,S","file":"commons_ac6d6f4b.js","sourcesContent":["export function common () {\n  return 'common'\n}"],"sourceRoot":""}
