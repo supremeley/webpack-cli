@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './app.less';
 import './app.css';
-import testImg from '../assets/test.gif';
+// import testImg from '../assets/test.gif';
+import largeNumber from 'large-number-zzz';
 import testsImg from '../assets/test2.jpg';
 import { common } from '../../common';
 import { a } from './tree-shaking';
@@ -17,8 +18,8 @@ class App extends React.Component {
   }
 
   loadComponent() {
-    import('./test.js').then((Text) => {
-      console.log(Text);
+    import('./test.jsx').then((Text) => {
+      // console.log(Text);
       this.setState({ Text: Text.default });
     });
   }
@@ -28,6 +29,7 @@ class App extends React.Component {
     const resb = common();
     const resA = a();
     const { Text } = this.state;
+    const addResult = largeNumber('999', '1000');
 
     return (
       <div className="app">
@@ -35,6 +37,7 @@ class App extends React.Component {
         <span className="apps">{resA}</span>
         <span className="apps">in</span>
         {/* <img src={testImg} /> */}
+        {addResult}
         <img src={testsImg} onClick={this.loadComponent.bind(this)} />
         {Text ? <Text /> : null}
         {Text}

@@ -1,2 +1,0 @@
-(self.webpackChunkwebpack=self.webpackChunkwebpack||[]).push([[370],{370:(e,c,n)=>{"use strict";n.r(c),n.d(c,{default:()=>u});var t=n(466);const u=function(){return t.createElement("div",null,"动态脚本")}}}]);
-//# sourceMappingURL=370_a3a3528e.js.map

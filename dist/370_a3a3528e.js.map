@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://webpack/./src/app/test.js"],"names":[],"mappings":"2IAEA,mBAAe,OAAM","file":"370_a3a3528e.js","sourcesContent":["import React from 'react';\n\nexport default () => <div>动态脚本</div>;\n"],"sourceRoot":""}
